@@ -34,14 +34,12 @@ end
 end
 
 def can_get_the_first_item_in_the_database
-  first = Movie.first[:title]
-  first 
+  Movie.first 
   
 end
 
 def can_get_the_last_item_in_the_database
-  last = Movie.last[:title]
-  last 
+  Movie.last 
 end
 
 def can_get_size_of_the_database
@@ -49,7 +47,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.find(1)[:title]
+  Movie.find_by(id:1)
 end
 
 def can_find_by_multiple_attributes
